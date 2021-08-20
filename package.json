@@ -1,0 +1,20 @@
+{
+  "name": "pw_2021_website-gianlucagp",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5423329&assignment_repo_type=AssignmentRepo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gianlucagp: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@github.com/ucudal/PW_2021_Website-gianlucagp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucudal/PW_2021_Website-gianlucagp/issues"
+  },
+  "homepage": "https://github.com/ucudal/PW_2021_Website-gianlucagp#readme",
+  "keywords": []
+}
