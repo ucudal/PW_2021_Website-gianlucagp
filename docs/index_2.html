@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>HTML accessibility 2</title>
+</head>
+<body>
+    <!--
+  Welcome to Tailwind Play, the official Tailwind CSS playground!
+
+  Everything here works just like it does when you're running Tailwind locally
+  with a real build pipeline. You can customize your config file, use features
+  like `@apply`, or even add third-party plugins.
+
+  Feel free to play with this example if you're just learning, or trash it and
+  start from scratch if you know enough to be dangerous. Have fun!
+-->
+<div class="min-h-screen bg-gray-900 py-6 flex flex-col justify-center sm:py-12 ">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      
+       <div class="container" id="formulario">
+          <p class="text-center leading-loose text-5xl ">Need help? </p>
+          <p class="text-center leading-loose">If you have any problems with our products, our support center can offer you all the help you need, whether you want:  </p>
+          <br></br>
+          <div class="grid grid-cols-1">
+             <p class="text-center "> 1. Advice choosing a new product </p>
+             <p class="text-center ">2. Tech support on an existing product  </p>
+             <p class="text-center ">3. Refund and cancellation assistance  </p>
+          </div>
+          <p class="text-center leading-loose text-3xl ">Contact us now </p>
+          <p class="text-center "> Our help center contains live chat, e-mail addresses, and phone numbers.  </p>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3"></div>
+              <button class="shadow bg-blue-500 hover:bg-blue-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded" type="button" id="contact">
+                Find Contact Details
+              </button>
+            
+          </div>
+  
+          <br></br>
+          <p class="text-center leading-loose text-3xl "> Find out answers </p>
+          <p class="text-center "> Our Forums section contains a large knowledge base of searchable previously asked questions, and you can always ask a new question if you can't find the answer you're looking for.  </p>
+          <div class="md:flex md:items-center">
+            <div class="md:w-2/6"></div>
+              <button class="shadow bg-blue-500 hover:bg-blue-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded" type="button" id="forums">
+                Access Forums
+              </button>
+            
+          </div>
+          
+        </div>
+    </form>
+    </div>
+    <p class="text-center text-gray-300 text-xs">
+      HTML accessibility 2, Gianluca Positano.
+    </p>
+  </div>
+
+</body>
+</html>
