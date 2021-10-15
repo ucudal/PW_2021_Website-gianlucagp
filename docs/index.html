@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <title>HTML accessibility 2</title>
+  <title>Ejercicio Javascript</title>
 </head>
 <body>
     <!--
@@ -25,6 +25,7 @@
       
        <div class="container" id="formulario">
           <p class="text-center leading-loose">Dame toda tu info gato</p>
+		  <img src="pistola_gato.png" alt="Dame la plata ñieri">
           <br></br>
           <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div id="nom_label">Nombre</div>
@@ -45,14 +46,24 @@
               Enviar
   
               </button>
-              
             
           </div>
+		  <br></br>
+		  <div class="md:flex md:items-center">
+            <div class="md:w-1/3"></div>
+              <button class="shadow bg-blue-500 md:items-center hover:bg-blue-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded" id="btn_resultados" type="button">
+                
+              Mostrar Datos
+  
+              </button>
+            
+          </div>
+		  
         </div>
     </form>
     </div>
     <p class="text-center text-gray-300 text-xs">
-      HTML accessibility 2, Gianluca Positano.
+      Ejercicio Javascript, Gianluca Positano.
     </p>
   </div>
   <script src="script.js"></script> 
