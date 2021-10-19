@@ -7,6 +7,10 @@ module.exports = {
     extend:{
       colors:{
         globant:"#BFD732",
+      },
+      backgroundImage:{
+        'image-pattern': "url('/docs/pistola_gato.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
       }
     }
   },
