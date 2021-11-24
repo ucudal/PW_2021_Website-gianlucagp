@@ -4,11 +4,12 @@
 <html lang="en">
     <head>
         <title>Login</title>
-        <link rel="stylesheet" href="/styles.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="form">
-            <form action="/process_login" method="post">
+        <div class="min-h-screen bg-gray-900 py-6 flex flex-col justify-center sm:py-12 ">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+            <form action="/process_login" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
                 <h2>Login</h2>
                 <% if(locals.error) {%>
                 <p class="text-danger"><%=error%></p>
@@ -36,6 +37,7 @@
                 <% } %>
                 <input type="submit" value="LogIn">
             </form>
-        </div>
+    </div>
+</div>
     </body>
 </html>
