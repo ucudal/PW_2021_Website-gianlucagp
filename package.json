@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --serveStatic 'docs' --files '**/*'",
+    "start": "nodemon app.js",
     "uglify": "npx uglify-js src/script.js -o docs/script.min.js",
     "build": "tsc src/script.ts",
     "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css",
