@@ -1,0 +1,47 @@
+<!-- src/views/login.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="min-h-screen bg-gray-900 py-6 flex flex-col justify-center sm:py-12 ">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+            <form action="/process_login" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <p class="text-center leading-loose">Ingrese su comentario aqui</p>
+                <br></br>
+                <% if(locals.error) {%>
+                <p class="text-danger"><%=error%></p>
+                <%}%>
+                <div class="grid grid-cols-1 gap-4">
+                    <%if(locals.PW_2021_CV_Contacto){%>
+                        <div class="input-field">
+                            <input type="text" name="nombreContacto" id="nombreContacto" placeholder="Enter Name" value=<%=JSON.parse(PW_2021_CV_Contacto).nombreContacto%>  class="border-2" > <!-- se identifica por name-->
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="emailContacto" id="emailContacto" placeholder="Enter Email" value=<%=JSON.parse(PW_2021_CV_Contacto).emailContacto%> class="border-2">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="commentContacto" id="commentContacto" placeholder="Enter Comment" value=<%=JSON.parse(PW_2021_CV_Contacto).commentContacto%> class="border-2">
+                        </div>
+                    <%} else { %>
+                    <div class="input-field">
+                        <input type="text" name="nombreContacto" id="nombreContacto" placeholder="Enter Name" class="border-2"> <!-- se identifica por name-->
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="emailContacto" id="emailContacto" placeholder="Enter Email" class="border-2">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="commentContacto" id="commentContacto" placeholder="Enter Comment" class="border-2">
+                    </div>
+                </div>
+                <% } %>
+                <br></br>
+                <input type="submit" value="Enviar" class="w-auto shadow bg-green-500 hover:bg-green-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded">
+            </form>
+    </div>
+</div>
+    </body>
+</html>

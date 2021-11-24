@@ -1,0 +1,29 @@
+<!-- src/views/welcome.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="min-h-screen bg-gray-900 py-6 flex flex-col justify-center sm:py-12 ">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
+            <div class="welcome">
+                <p class="text-center leading-loose">
+                    Gracias <%=JSON.parse(PW_2021_CV_Contacto).nombreContacto%> por su comentario, ha sido enviado exitosamente.
+                </p>
+                <br><br>
+                <div class="md:flex md:items-center"></div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="/logout" class="w-auto shadow bg-red-500 hover:bg-red-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded">Limpiar Cookies</a>
+                        <a href="/" class="w-auto shadow bg-blue-500 hover:bg-blue-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded">Volver a la principal</a>
+                    </div>
+                </div>
+            </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
