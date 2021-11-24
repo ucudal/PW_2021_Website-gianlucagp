@@ -9,7 +9,7 @@
     <body>
         <div class="min-h-screen bg-gray-900 py-6 flex flex-col justify-center sm:py-12 ">
             <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-            <form action="/process_login" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
+            <form action="/process_login" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <p class="text-center leading-loose">Ingrese su comentario aqui</p>
                 <br></br>
                 <% if(locals.error) {%>
@@ -39,7 +39,7 @@
                 </div>
                 <% } %>
                 <br></br>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="w-auto shadow bg-green-500 hover:bg-green-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded">
             </form>
     </div>
 </div>

@@ -11,11 +11,16 @@
             <div class="relative py-3 sm:max-w-xl sm:mx-auto">
                 <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
             <div class="welcome">
-                <h4>
+                <p class="text-center leading-loose">
                     Gracias <%=JSON.parse(PW_2021_CV_Contacto).nombreContacto%> por su comentario, ha sido enviado exitosamente.
-                </h4>
-                <a href="/logout">Limpiar Cookies</a>
-                <a href="/">Volver a la principal</a>
+                </p>
+                <br><br>
+                <div class="md:flex md:items-center"></div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="/logout" class="w-auto shadow bg-red-500 hover:bg-red-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded">Limpiar Cookies</a>
+                        <a href="/" class="w-auto shadow bg-blue-500 hover:bg-blue-700 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded">Volver a la principal</a>
+                    </div>
+                </div>
             </div>
                 </form>
             </div>
